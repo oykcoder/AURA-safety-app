@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+
+  --color-wa-header: #008069;
+  --color-wa-header-icon: #e9edef;
+
+  --color-wa-panel: #f0f2f5;
+  --color-wa-item-bg: #ffffff;
+  --color-wa-border: #e9edef;
+
+  --color-wa-text-primary: #111b21;
+  --color-wa-secondary: #667781;
+  --color-wa-muted-icon: #667781;
+
+  --color-wa-accent: #25d366;
+  --color-wa-unread-badge: #25d366;
+
+  --color-wa-avatar-bg: #dfe5e7;
+
+  --color-wa-item-hover: #f5f6f6;
+  --color-wa-item-active: #ebebeb;
+
+  /* Arama / input alanları */
+  --color-wa-search-input-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  /* WhatsApp Dark: arka plan */
+  --color-wa-panel: #111b21;
+
+  /* sohbet balonu / input arka planı */
+  --color-wa-item-bg: #202c33;
+
+  --color-wa-header: #075e54;
+  --color-wa-header-icon: #e9edef;
+
+  --color-wa-border: #2a3942;
+  --color-wa-text-primary: #e9edef;
+  --color-wa-secondary: #8696a0;
+  --color-wa-muted-icon: #8696a0;
+
+  --color-wa-accent: #25d366;
+  --color-wa-unread-badge: #25d366;
+
+  --color-wa-avatar-bg: #2a3942;
+
+  --color-wa-item-hover: #1f2a33;
+  --color-wa-item-active: #18222a;
+
+  --color-wa-search-input-bg: #202c33;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-wa-panel);
+  color: var(--color-wa-text-primary);
+}
